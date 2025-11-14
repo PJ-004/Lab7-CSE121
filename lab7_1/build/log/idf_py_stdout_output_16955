@@ -1,0 +1,524 @@
+Command: /home/pj/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/pj/Documents/cse121/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/pj/Documents/cse121/Lab7-CSE121/lab7_1/build/lab7_1.elf /home/pj/Documents/cse121/Lab7-CSE121/lab7_1/build/bootloader/bootloader.elf -m '/home/pj/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/pj/Documents/cse121/esp/esp-idf/tools/idf.py'
+[0;32mI (103) esp_image: segment 2: paddr=0002c578 vaddr=40380000 size sleeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2025 12:09:31[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1977ch (104316) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=000297a4 vaddr=3fc94600 size=02dcch ( 11724) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002c578 vaddr=40380000 size=03aa0h ( 15008) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=990dch (626908) map[0m
+[0;32mI (211) esp_image: segment 4: paddr=000c9104 vaddr=40383aa0 size=10958h ( 67928) load[0m
+[0;32mI (224) esp_image: segment 5: paddr=000d9a64 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (231) boot: Disabling RNG early entropy source...[0m
+[0;32mI (242) cpu_start: Unicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (250) app_init: Application information:[0m
+[0;32mI (250) app_init: Project name:     lab7_1[0m
+[0;32mI (254) app_init: App version:      1[0m
+[0;32mI (257) app_init: Compile time:     Nov 14 2025 14:53:29[0m
+[0;32mI (262) app_init: ELF file SHA256:  5cac076ea...[0m
+[0;32mI (267) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (271) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (275) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (279) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (283) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (289) heap_init: At 3FC9BBE0 len 00024420 (145 KiB): RAM[0m
+[0;32mI (294) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (300) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (306) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (354) example_connect: Start example_connect.[0m
+[0;32mI (354) pp: pp rom version: 9387209[0m
+[0;32mI (354) net80211: net80211 rom version: 9387209[0m
+[0;32mI (364) wifi:wifi driver task: 3fca4364, prio:23, stack:6656, core=0[0m
+[0;32mI (374) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (374) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (374) wifi:config nano formatting: disabled[0m
+[0;32mI (374) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (384) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (384) wifi:Init management short buffer num: 32[0m
+[0;32mI (394) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (394) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (404) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (404) wifi:Init static rx buffer num: 10[0m
+[0;32mI (404) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (414) wifi_init: rx ba win: 6[0m
+[0;32mI (414) wifi_init: accept mbox: 6[0m
+[0;32mI (414) wifi_init: tcpip mbox: 32[0m
+[0;32mI (424) wifi_init: udp mbox: 6[0m
+[0;32mI (424) wifi_init: tcp mbox: 6[0m
+[0;32mI (424) wifi_init: tcp tx win: 5760[0m
+[0;32mI (434) wifi_init: tcp rx win: 5760[0m
+[0;32mI (434) wifi_init: tcp mss: 1440[0m
+[0;32mI (434) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (444) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (444) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (484) wifi:mode : sta (a0:85:e3:06:73:c8)[0m
+[0;32mI (484) wifi:enable tsf[0m
+[0;32mI (484) example_connect: Connecting to CSE121_2.4Ghz...[0m
+[0;33mW (484) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (494) example_connect: Waiting for IP(s)[0m
+[0;32mI (3004) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3004) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3014) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3014) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3114) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (3114) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (3124) wifi:connected with CSE121_2.4Ghz, aid = 1, channel 4, 40U, bssid = 7c:f1:7e:fb:49:77[0m
+[0;32mI (3124) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (3134) wifi:pm start, type: 1[0m
+
+[0;32mI (3134) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3144) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3164) wifi:<ba-add>idx:0 (ifx:0, 7c:f1:7e:fb:49:77), tid:0, ssn:2, winSize:64[0m
+[0;32mI (3174) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4354) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:a285:e3ff:fe06:73c8, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4674) esp_netif_handlers: example_netif_sta ip: 192.168.0.124, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4674) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.124[0m
+[0;32mI (4674) example_common: Connected to example_netif_sta[0m
+[0;32mI (4684) example_common: - IPv4 address: 192.168.0.124,[0m
+[0;32mI (4684) example_common: - IPv6 address: fe80:0000:0000:0000:a285:e3ff:fe06:73c8, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4694) main_task: Returned from app_main()[0m
+[0;32mI (4704) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (4704) wttr-connection: ... allocated socket[0m
+[0;32mI (4914) wttr-connection: ... connected[0m
+[0;32mI (4914) wttr-connection: ... socket send success[0m
+[0;32mI (4914) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 22:59:40 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (5384) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (5394) wttr-connection: 10... [0m
+[0;32mI (6394) wttr-connection: 9... [0m
+[0;32mI (7394) wttr-connection: 8... [0m
+[0;32mI (8394) wttr-connection: 7... [0m
+[0;32mI (9394) wttr-connection: 6... [0m
+[0;32mI (10394) wttr-connection: 5... [0m
+[0;32mI (11394) wttr-connection: 4... [0m
+[0;32mI (12394) wttr-connection: 3... [0m
+[0;32mI (13394) wttr-connection: 2... [0m
+[0;32mI (14394) wttr-connection: 1... [0m
+[0;32mI (15394) wttr-connection: 0... [0m
+[0;32mI (16394) wttr-connection: Starting again![0m
+[0;32mI (16394) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (16394) wttr-connection: ... allocated socket[0m
+[0;32mI (16694) wttr-connection: ... connected[0m
+[0;32mI (16694) wttr-connection: ... socket send success[0m
+[0;32mI (16694) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 22:59:52 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (17034) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (17044) wttr-connection: 10... [0m
+[0;32mI (18044) wttr-connection: 9... [0m
+[0;32mI (19044) wttr-connection: 8... [0m
+[0;32mI (20044) wttr-connection: 7... [0m
+[0;32mI (21044) wttr-connection: 6... [0m
+[0;32mI (22044) wttr-connection: 5... [0m
+[0;32mI (23044) wttr-connection: 4... [0m
+[0;32mI (24044) wttr-connection: 3... [0m
+[0;32mI (25044) wttr-connection: 2... [0m
+[0;32mI (26044) wttr-connection: 1... [0m
+[0;32mI (27044) wttr-connection: 0... [0m
+[0;32mI (28044) wttr-connection: Starting again![0m
+[0;32mI (28044) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (28044) wttr-connection: ... allocated socket[0m
+[0;32mI (28084) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (28084) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (28264) wifi:<ba-add>idx:0 (ifx:0, 7c:f1:7e:fb:49:77), tid:0, ssn:19, winSize:64[0m
+[0;32mI (28264) wttr-connection: ... connected[0m
+[0;32mI (28264) wttr-connection: ... socket send success[0m
+[0;32mI (28264) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:00:07 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (31974) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (31984) wttr-connection: 10... [0m
+[0;32mI (32984) wttr-connection: 9... [0m
+[0;32mI (33984) wttr-connection: 8... [0m
+[0;32mI (34984) wttr-connection: 7... [0m
+[0;32mI (35984) wttr-connection: 6... [0m
+[0;32mI (36984) wttr-connection: 5... [0m
+[0;32mI (37984) wttr-connection: 4... [0m
+[0;32mI (38984) wttr-connection: 3... [0m
+[0;32mI (39984) wttr-connection: 2... [0m
+[0;32mI (40984) wttr-connection: 1... [0m
+[0;32mI (41984) wttr-connection: 0... [0m
+[0;32mI (42984) wttr-connection: Starting again![0m
+[0;32mI (42984) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (42984) wttr-connection: ... allocated socket[0m
+[0;32mI (43214) wttr-connection: ... connected[0m
+[0;32mI (43214) wttr-connection: ... socket send success[0m
+[0;32mI (43214) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:00:22 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (46924) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (46934) wttr-connection: 10... [0m
+[0;32mI (47934) wttr-connection: 9... [0m
+[0;32mI (48934) wttr-connection: 8... [0m
+[0;32mI (49934) wttr-connection: 7... [0m
+[0;32mI (50934) wttr-connection: 6... [0m
+[0;32mI (51934) wttr-connection: 5... [0m
+[0;32mI (52934) wttr-connection: 4... [0m
+[0;32mI (53934) wttr-connection: 3... [0m
+[0;32mI (54934) wttr-connection: 2... [0m
+[0;32mI (55934) wttr-connection: 1... [0m
+[0;32mI (56934) wttr-connection: 0... [0m
+[0;32mI (57934) wttr-connection: Starting again![0m
+[0;32mI (57934) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (57934) wttr-connection: ... allocated socket[0m
+[0;32mI (59394) wttr-connection: ... connected[0m
+[0;32mI (59394) wttr-connection: ... socket send success[0m
+[0;32mI (59394) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:00:35 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (59934) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (59944) wttr-connection: 10... [0m
+[0;32mI (60944) wttr-connection: 9... [0m
+[0;32mI (61944) wttr-connection: 8... [0m
+[0;32mI (62944) wttr-connection: 7... [0m
+[0;32mI (63944) wttr-connection: 6... [0m
+[0;32mI (64944) wttr-connection: 5... [0m
+[0;32mI (65944) wttr-connection: 4... [0m
+[0;32mI (66944) wttr-connection: 3... [0m
+[0;32mI (67944) wttr-connection: 2... [0m
+[0;32mI (68944) wttr-connection: 1... [0m
+[0;32mI (69944) wttr-connection: 0... [0m
+[0;32mI (70944) wttr-connection: Starting again![0m
+[0;32mI (70944) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (70944) wttr-connection: ... allocated socket[0m
+[0;32mI (76904) wttr-connection: ... connected[0m
+[0;32mI (76904) wttr-connection: ... socket send success[0m
+[0;32mI (76904) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:00:54 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (79284) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (79294) wttr-connection: 10... [0m
+[0;32mI (80294) wttr-connection: 9... [0m
+[0;32mI (81294) wttr-connection: 8... [0m
+[0;32mI (82294) wttr-connection: 7... [0m
+[0;32mI (83294) wttr-connection: 6... [0m
+[0;32mI (84294) wttr-connection: 5... [0m
+[0;32mI (85294) wttr-connection: 4... [0m
+[0;32mI (86294) wttr-connection: 3... [0m
+[0;32mI (87294) wttr-connection: 2... [0m
+[0;32mI (88294) wttr-connection: 1... [0m
+[0;32mI (89294) wttr-connection: 0... [0m
+[0;32mI (90294) wttr-connection: Starting again![0m
+[0;32mI (90294) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (90294) wttr-connection: ... allocated socket[0m
+[0;32mI (90524) wttr-connection: ... connected[0m
+[0;32mI (90524) wttr-connection: ... socket send success[0m
+[0;32mI (90524) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:01:06 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (91474) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (91484) wttr-connection: 10... [0m
+[0;32mI (92484) wttr-connection: 9... [0m
+[0;32mI (93484) wttr-connection: 8... [0m
+[0;32mI (94484) wttr-connection: 7... [0m
+[0;32mI (95484) wttr-connection: 6... [0m
+[0;32mI (96484) wttr-connection: 5... [0m
+[0;32mI (97484) wttr-connection: 4... [0m
+[0;32mI (98484) wttr-connection: 3... [0m
+[0;32mI (99484) wttr-connection: 2... [0m
+[0;32mI (100484) wttr-connection: 1... [0m
+[0;32mI (101484) wttr-connection: 0... [0m
+[0;32mI (102484) wttr-connection: Starting again![0m
+[0;32mI (102484) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (102484) wttr-connection: ... allocated socket[0m
+[0;32mI (104244) wttr-connection: ... connected[0m
+[0;32mI (104244) wttr-connection: ... socket send success[0m
+[0;32mI (104244) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:01:21 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (105904) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (105914) wttr-connection: 10... [0m
+[0;32mI (106924) wttr-connection: 9... [0m
+[0;32mI (107924) wttr-connection: 8... [0m
+[0;32mI (108924) wttr-connection: 7... [0m
+[0;32mI (109924) wttr-connection: 6... [0m
+[0;32mI (110924) wttr-connection: 5... [0m
+[0;32mI (111924) wttr-connection: 4... [0m
+[0;32mI (112924) wttr-connection: 3... [0m
+[0;32mI (113924) wttr-connection: 2... [0m
+[0;32mI (114924) wttr-connection: 1... [0m
+[0;32mI (115924) wttr-connection: 0... [0m
+[0;32mI (116924) wttr-connection: Starting again![0m
+[0;32mI (116924) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (116924) wttr-connection: ... allocated socket[0m
+[0;32mI (118214) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (118214) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (118374) wifi:<ba-add>idx:0 (ifx:0, 7c:f1:7e:fb:49:77), tid:0, ssn:52, winSize:64[0m
+[0;32mI (118374) wttr-connection: ... connected[0m
+[0;32mI (118374) wttr-connection: ... socket send success[0m
+[0;32mI (118384) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:01:37 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (122094) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (122094) wttr-connection: 10... [0m
+[0;32mI (123104) wttr-connection: 9... [0m
+[0;32mI (124104) wttr-connection: 8... [0m
+[0;32mI (125104) wttr-connection: 7... [0m
+[0;32mI (126104) wttr-connection: 6... [0m
+[0;32mI (127104) wttr-connection: 5... [0m
+[0;32mI (128104) wttr-connection: 4... [0m
+[0;32mI (129104) wttr-connection: 3... [0m
+[0;32mI (130104) wttr-connection: 2... [0m
+[0;32mI (131104) wttr-connection: 1... [0m
+[0;32mI (132104) wttr-connection: 0... [0m
+[0;32mI (133104) wttr-connection: Starting again![0m
+[0;32mI (133104) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (133104) wttr-connection: ... allocated socket[0m
+[0;32mI (137624) wttr-connection: ... connected[0m
+[0;32mI (137624) wttr-connection: ... socket send success[0m
+[0;32mI (137624) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:01:53 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (138674) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (138684) wttr-connection: 10... [0m
+[0;32mI (139684) wttr-connection: 9... [0m
+[0;32mI (140684) wttr-connection: 8... [0m
+[0;32mI (141684) wttr-connection: 7... [0m
+[0;32mI (142684) wttr-connection: 6... [0m
+[0;32mI (143684) wttr-connection: 5... [0m
+[0;32mI (144684) wttr-connection: 4... [0m
+[0;32mI (145684) wttr-connection: 3... [0m
+[0;32mI (146684) wttr-connection: 2... [0m
+[0;32mI (147684) wttr-connection: 1... [0m
+[0;32mI (148684) wttr-connection: 0... [0m
+[0;32mI (149684) wttr-connection: Starting again![0m
+[0;32mI (149684) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (149684) wttr-connection: ... allocated socket[0m
+[0;32mI (151144) wttr-connection: ... connected[0m
+[0;32mI (151144) wttr-connection: ... socket send success[0m
+[0;32mI (151144) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:02:08 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (153014) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (153024) wttr-connection: 10... [0m
+[0;32mI (154024) wttr-connection: 9... [0m
+[0;32mI (155024) wttr-connection: 8... [0m
+[0;32mI (156024) wttr-connection: 7... [0m
+[0;32mI (157024) wttr-connection: 6... [0m
+[0;32mI (158024) wttr-connection: 5... [0m
+[0;32mI (159024) wttr-connection: 4... [0m
+[0;32mI (160024) wttr-connection: 3... [0m
+[0;32mI (161024) wttr-connection: 2... [0m
+[0;32mI (162024) wttr-connection: 1... [0m
+[0;32mI (163024) wttr-connection: 0... [0m
+[0;32mI (164024) wttr-connection: Starting again![0m
+[0;32mI (164024) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (164024) wttr-connection: ... allocated socket[0m
+[0;32mI (164254) wttr-connection: ... connected[0m
+[0;32mI (164254) wttr-connection: ... socket send success[0m
+[0;32mI (164254) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:02:23 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (167964) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (167974) wttr-connection: 10... [0m
+[0;32mI (168974) wttr-connection: 9... [0m
+[0;32mI (169284) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (169284) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (169974) wttr-connection: 8... [0m
+[0;32mI (170974) wttr-connection: 7... [0m
+[0;32mI (171974) wttr-connection: 6... [0m
+[0;32mI (172974) wttr-connection: 5... [0m
+[0;32mI (173974) wttr-connection: 4... [0m
+[0;32mI (174084) wifi:<ba-add>idx:0 (ifx:0, 7c:f1:7e:fb:49:77), tid:0, ssn:77, winSize:64[0m
+[0;32mI (174974) wttr-connection: 3... [0m
+[0;32mI (175974) wttr-connection: 2... [0m
+[0;32mI (176974) wttr-connection: 1... [0m
+[0;32mI (177974) wttr-connection: 0... [0m
+[0;32mI (178974) wttr-connection: Starting again![0m
+[0;32mI (178974) wttr-connection: DNS lookup succeeded. IP=5.9.243.187[0m
+[0;32mI (178974) wttr-connection: ... allocated socket[0m
+[0;32mI (186304) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (186304) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (186474) wifi:<ba-add>idx:0 (ifx:0, 7c:f1:7e:fb:49:77), tid:0, ssn:87, winSize:64[0m
+[0;32mI (186474) wttr-connection: ... connected[0m
+[0;32mI (186474) wttr-connection: ... socket send success[0m
+[0;32mI (186474) wttr-connection: ... set socket receiving timeout success[0m
+HTTP/1.0 301 Moved Permanently
+Access-Control-Allow-Origin: *
+Location: https://wttr.in:80/
+Date: Fri, 14 Nov 2025 23:02:43 GMT
+Content-Length: 214
+Content-Type: text/html; charset=utf-8
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="https://wttr.in:80/">here</A>.
+</BODY></HTML>
+[0;32mI (188644) wttr-connection: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (188654) wttr-connection: 10... [0m
+[0;32mI (189664) wttr-connection: 9... [0m
+[0;32mI (190664) wttr-connection: 8... [0m
+[0;32mI (191664) wttr-connection: 7... [0m
+[0;32mI (192664) wttr-connection: 6... [0m
+[0;32mI (193664) wttr-connection: 5... [0m
+[0;32mI (194664) wttr-connection: 4... [0m
+[0;32mI (195664) wttr-connection: 3... [0m
+[0;32mI (196664) wttr-connection: 2... [0m
+[0;32mI (197664) wttr-connection: 1... [0m
+[0;32mI (198664) wttr-connection: 0... [0m
