@@ -25,7 +25,7 @@
 #include "driver/i2c_master.h"
 
 /* Constants that aren't configurable in menuconfig */
-#define WEB_SERVER "192.168.0.101"
+#define WEB_SERVER ""
 #define WEB_PORT "8000"
 #define WEB_PATH "/"
 
