@@ -1,0 +1,189 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/pj/Documents/cse121/Lab7-CSE121/lab7_2/build/bootloader/esp-idf/esptool_py && /home/pj/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/pj/Documents/cse121/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/pj/Documents/cse121/Lab7-CSE121/lab7_2/build/bootloader/bootloader.bin
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: [code=1] esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/pj/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/build/config -I/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main -I/home/pj/Documents/cse121/esp/esp-idf/components/newlib/platform_include -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/config/include -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/config/include/freertos -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/config/riscv/include -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/pj/Documents/cse121/esp/esp-idf/components/freertos/esp_additions/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/include/soc -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/include/soc/esp32c3 -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/dma/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/port/esp32c3/. -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/port/esp32c3/include -I/home/pj/Documents/cse121/esp/esp-idf/components/heap/include -I/home/pj/Documents/cse121/esp/esp-idf/components/heap/tlsf -I/home/pj/Documents/cse121/esp/esp-idf/components/log/include -I/home/pj/Documents/cse121/esp/esp-idf/components/soc/include -I/home/pj/Documents/cse121/esp/esp-idf/components/soc/esp32c3 -I/home/pj/Documents/cse121/esp/esp-idf/components/soc/esp32c3/include -I/home/pj/Documents/cse121/esp/esp-idf/components/soc/esp32c3/register -I/home/pj/Documents/cse121/esp/esp-idf/components/hal/platform_port/include -I/home/pj/Documents/cse121/esp/esp-idf/components/hal/esp32c3/include -I/home/pj/Documents/cse121/esp/esp-idf/components/hal/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_rom/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_rom/esp32c3/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_rom/esp32c3/include/esp32c3 -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_rom/esp32c3 -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_common/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_system/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_system/port/soc -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_system/port/include/riscv -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_system/port/include/private -I/home/pj/Documents/cse121/esp/esp-idf/components/riscv/include -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/include -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/include/apps -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/include/apps/sntp -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/lwip/src/include -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/port/include -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/port/freertos/include -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/pj/Documents/cse121/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/pj/Documents/cse121/esp/esp-idf/examples/common_components/protocol_examples_common/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_gpio/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_timer/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_pm/include -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/port/include -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/pj/Documents/cse121/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_app_format/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_bootloader_format/include -I/home/pj/Documents/cse121/esp/esp-idf/components/app_update/include -I/home/pj/Documents/cse121/esp/esp-idf/components/bootloader_support/include -I/home/pj/Documents/cse121/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_partition/include -I/home/pj/Documents/cse121/esp/esp-idf/components/efuse/include -I/home/pj/Documents/cse121/esp/esp-idf/components/efuse/esp32c3/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_mm/include -I/home/pj/Documents/cse121/esp/esp-idf/components/spi_flash/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_security/include -I/home/pj/Documents/cse121/esp/esp-idf/components/pthread/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_event/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_ringbuf/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_uart/include -I/home/pj/Documents/cse121/esp/esp-idf/components/vfs/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_vfs_console/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_netif/include -I/home/pj/Documents/cse121/esp/esp-idf/components/nvs_flash/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_phy/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_phy/esp32c3/include -I/home/pj/Documents/cse121/esp/esp-idf/components/wpa_supplicant/include -I/home/pj/Documents/cse121/esp/esp-idf/components/wpa_supplicant/port/include -I/home/pj/Documents/cse121/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_coex/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_wifi/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_wifi/include/local -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/pj/Documents/cse121/esp/esp-idf/components/console -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_spi/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_eth/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_pcnt/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_gptimer/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_i2s/include -I/home/pj/Documents/cse121/esp/esp-idf/components/sdmmc/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_sdspi/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_sdio/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_dac/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_bitscrambler/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_rmt/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_tsens/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_sdm/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_i2c/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_ledc/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_parlio/include -I/home/pj/Documents/cse121/esp/esp-idf/components/esp_driver_twai/include -I/home/pj/Documents/cse121/esp/esp-idf/components/driver/deprecated -I/home/pj/Documents/cse121/esp/esp-idf/components/driver/i2c/include -I/home/pj/Documents/cse121/esp/esp-idf/components/driver/touch_sensor/include -I/home/pj/Documents/cse121/esp/esp-idf/components/driver/twai/include -I/home/pj/Documents/cse121/esp/esp-idf/components/ieee802154/include -march=rv32imc_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/pj/Documents/cse121/Lab7-CSE121/lab7_2=. -fmacro-prefix-map=/home/pj/Documents/cse121/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:49:8: error: unknown type name 'i2c_master_bus_handle_t'
+   49 | static i2c_master_bus_handle_t bus_handle;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:50:8: error: unknown type name 'i2c_master_dev_handle_t'
+   50 | static i2c_master_dev_handle_t dev_handle;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c: In function 'i2c_master_init':
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:54:5: error: unknown type name 'i2c_master_bus_config_t'
+   54 |     i2c_master_bus_config_t bus_config = {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:55:9: error: field name not in record or union initializer
+   55 |         .i2c_port = I2C_MASTER_NUM,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:55:9: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:34:37: error: 'I2C_NUM_0' undeclared (first use in this function)
+   34 | #define I2C_MASTER_NUM              I2C_NUM_0                   /*!< I2C port number for master dev */
+      |                                     ^~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:55:21: note: in expansion of macro 'I2C_MASTER_NUM'
+   55 |         .i2c_port = I2C_MASTER_NUM,
+      |                     ^~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:34:37: note: each undeclared identifier is reported only once for each function it appears in
+   34 | #define I2C_MASTER_NUM              I2C_NUM_0                   /*!< I2C port number for master dev */
+      |                                     ^~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:55:21: note: in expansion of macro 'I2C_MASTER_NUM'
+   55 |         .i2c_port = I2C_MASTER_NUM,
+      |                     ^~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:56:9: error: field name not in record or union initializer
+   56 |         .sda_io_num = I2C_MASTER_SDA_IO,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:56:9: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:33:37: warning: excess elements in scalar initializer
+   33 | #define I2C_MASTER_SDA_IO           10                          /*!< GPIO number used for I2C master data  */
+      |                                     ^~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:56:23: note: in expansion of macro 'I2C_MASTER_SDA_IO'
+   56 |         .sda_io_num = I2C_MASTER_SDA_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:33:37: note: (near initialization for 'bus_config')
+   33 | #define I2C_MASTER_SDA_IO           10                          /*!< GPIO number used for I2C master data  */
+      |                                     ^~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:56:23: note: in expansion of macro 'I2C_MASTER_SDA_IO'
+   56 |         .sda_io_num = I2C_MASTER_SDA_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:57:9: error: field name not in record or union initializer
+   57 |         .scl_io_num = I2C_MASTER_SCL_IO,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:57:9: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:32:37: warning: excess elements in scalar initializer
+   32 | #define I2C_MASTER_SCL_IO           8                           /*!< GPIO number used for I2C master clock */
+      |                                     ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:57:23: note: in expansion of macro 'I2C_MASTER_SCL_IO'
+   57 |         .scl_io_num = I2C_MASTER_SCL_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:32:37: note: (near initialization for 'bus_config')
+   32 | #define I2C_MASTER_SCL_IO           8                           /*!< GPIO number used for I2C master clock */
+      |                                     ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:57:23: note: in expansion of macro 'I2C_MASTER_SCL_IO'
+   57 |         .scl_io_num = I2C_MASTER_SCL_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:58:9: error: field name not in record or union initializer
+   58 |         .clk_source = I2C_CLK_SRC_DEFAULT,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:58:9: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:58:23: error: 'I2C_CLK_SRC_DEFAULT' undeclared (first use in this function)
+   58 |         .clk_source = I2C_CLK_SRC_DEFAULT,
+      |                       ^~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:58:23: warning: excess elements in scalar initializer
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:58:23: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:59:9: error: field name not in record or union initializer
+   59 |         .glitch_ignore_cnt = 7,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:59:9: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:59:30: warning: excess elements in scalar initializer
+   59 |         .glitch_ignore_cnt = 7,
+      |                              ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:59:30: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:60:9: error: field name not in record or union initializer
+   60 |         .flags.enable_internal_pullup = true,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:60:9: note: (near initialization for 'bus_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:60:41: warning: excess elements in scalar initializer
+   60 |         .flags.enable_internal_pullup = true,
+      |                                         ^~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:60:41: note: (near initialization for 'bus_config')
+In file included from /home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h:21,
+                 from /home/pj/Documents/cse121/esp/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/pj/Documents/cse121/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:65,
+                 from /home/pj/Documents/cse121/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/pj/Documents/cse121/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:10:
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:62:21: error: implicit declaration of function 'i2c_new_master_bus' [-Wimplicit-function-declaration]
+   62 |     ESP_ERROR_CHECK(i2c_new_master_bus(&bus_config, &bus_handle));
+      |                     ^~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:64:5: error: unknown type name 'i2c_device_config_t'
+   64 |     i2c_device_config_t dev_config = {
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:65:9: error: field name not in record or union initializer
+   65 |         .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:65:9: note: (near initialization for 'dev_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:65:28: error: 'I2C_ADDR_BIT_LEN_7' undeclared (first use in this function)
+   65 |         .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+      |                            ^~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:66:9: error: field name not in record or union initializer
+   66 |         .device_address = SHTC3_SENSOR_ADDR,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:66:9: note: (near initialization for 'dev_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:38:37: warning: excess elements in scalar initializer
+   38 | #define SHTC3_SENSOR_ADDR           0x70                        /*!< Address of the SHTC3 sensor */
+      |                                     ^~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:66:27: note: in expansion of macro 'SHTC3_SENSOR_ADDR'
+   66 |         .device_address = SHTC3_SENSOR_ADDR,
+      |                           ^~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:38:37: note: (near initialization for 'dev_config')
+   38 | #define SHTC3_SENSOR_ADDR           0x70                        /*!< Address of the SHTC3 sensor */
+      |                                     ^~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:66:27: note: in expansion of macro 'SHTC3_SENSOR_ADDR'
+   66 |         .device_address = SHTC3_SENSOR_ADDR,
+      |                           ^~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:67:9: error: field name not in record or union initializer
+   67 |         .scl_speed_hz = I2C_MASTER_FREQ_HZ,
+      |         ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:67:9: note: (near initialization for 'dev_config')
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:35:37: warning: excess elements in scalar initializer
+   35 | #define I2C_MASTER_FREQ_HZ          100000                      /*!< I2C master clock frequency */
+      |                                     ^~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:67:25: note: in expansion of macro 'I2C_MASTER_FREQ_HZ'
+   67 |         .scl_speed_hz = I2C_MASTER_FREQ_HZ,
+      |                         ^~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:35:37: note: (near initialization for 'dev_config')
+   35 | #define I2C_MASTER_FREQ_HZ          100000                      /*!< I2C master clock frequency */
+      |                                     ^~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:67:25: note: in expansion of macro 'I2C_MASTER_FREQ_HZ'
+   67 |         .scl_speed_hz = I2C_MASTER_FREQ_HZ,
+      |                         ^~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:69:21: error: implicit declaration of function 'i2c_master_bus_add_device' [-Wimplicit-function-declaration]
+   69 |     ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_config, &dev_handle));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c: In function 'SHTC3_wake':
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:91:5: error: implicit declaration of function 'i2c_master_transmit'; did you mean 'i2c_master_init'? [-Wimplicit-function-declaration]
+   91 |     i2c_master_transmit(dev_handle, wake_cmd, 2, I2C_MASTER_TIMEOUT_MS);
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     i2c_master_init
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c: In function 'SHTC3_measure':
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:118:21: error: implicit declaration of function 'i2c_master_receive'; did you mean 'i2c_master_init'? [-Wimplicit-function-declaration]
+  118 |     ESP_ERROR_CHECK(i2c_master_receive(dev_handle, data, 6, I2C_MASTER_TIMEOUT_MS));
+      |                     ^~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from /home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:15:
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:121:18: error: 'TAG' undeclared (first use in this function)
+  121 |         ESP_LOGE(TAG, "Failed to read temperature");
+      |                  ^~~
+/home/pj/Documents/cse121/esp/esp-idf/components/log/include/esp_log.h:220:111: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                               ^~~
+/home/pj/Documents/cse121/esp/esp-idf/components/log/include/esp_log.h:123:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  123 | #define ESP_LOGE(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:121:9: note: in expansion of macro 'ESP_LOGE'
+  121 |         ESP_LOGE(TAG, "Failed to read temperature");
+      |         ^~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c: At top level:
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:98:13: warning: 'SHTC3_sleep' defined but not used [-Wunused-function]
+   98 | static void SHTC3_sleep()
+      |             ^~~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:88:13: warning: 'SHTC3_wake' defined but not used [-Wunused-function]
+   88 | static void SHTC3_wake()
+      |             ^~~~~~~~~~
+/home/pj/Documents/cse121/Lab7-CSE121/lab7_2/main/main.c:52:18: warning: 'i2c_master_init' defined but not used [-Wunused-function]
+   52 | static esp_err_t i2c_master_init(void)
+      |                  ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
