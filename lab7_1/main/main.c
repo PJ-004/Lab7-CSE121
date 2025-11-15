@@ -26,7 +26,7 @@
 /* Constants that aren't configurable in menuconfig */
 #define WEB_SERVER "wttr.in"
 #define WEB_PORT "80"
-#define WEB_PATH "/Santa-Cruz?m&format=3"
+#define WEB_PATH "/Santa-Cruz?m"
 
 static const char *TAG = "wttr-connection";
 
